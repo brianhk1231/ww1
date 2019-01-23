@@ -39,8 +39,8 @@ public class homeFragment extends android.support.v4.app.Fragment {
         });
 
 
-
         return view;
     }
+
 
 }
