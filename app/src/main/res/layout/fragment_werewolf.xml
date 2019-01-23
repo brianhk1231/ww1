@@ -34,18 +34,29 @@
         app:layout_constraintStart_toStartOf="@+id/werewolfText"
         app:layout_constraintTop_toBottomOf="@+id/werewolfText" />
 
+    <!--<Button-->
+        <!--android:id="@+id/buttonNext"-->
+        <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+
+
+        <!--android:text="Next"-->
+        <!--android:textColor="#808080"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/werewolfText"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/werewolfText"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/werewolfCount" />-->
+
     <Button
         android:id="@+id/buttonNext"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:textSize="18dp"
 
         android:text="Next"
-        android:textColor="#808080"
-        app:layout_constraintEnd_toEndOf="@+id/werewolfText"
-        app:layout_constraintStart_toStartOf="@+id/werewolfText"
-        app:layout_constraintTop_toBottomOf="@+id/werewolfCount" />
+        android:textColor="#FFFFFF" />
 
 
 

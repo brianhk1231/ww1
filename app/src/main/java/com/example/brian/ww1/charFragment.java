@@ -44,9 +44,14 @@ public class charFragment extends android.support.v4.app.Fragment {
         view = inflater.inflate(R.layout.fragment_char, container, false);
         imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
         layout = (LinearLayout) view.findViewById(R.id.linearLayout);
+
+        addWerewolf(num);
         for (String s:charList){
             addChar(s);
         }
+
+
+
         return view;
     }
 
@@ -62,10 +67,13 @@ public class charFragment extends android.support.v4.app.Fragment {
 
         final EditText tv2 = new EditText(getContext());
         tv2.setText("");
-        //tv2.setHint("Name");
+
         tv2.setHintTextColor(Color.parseColor("#808080"));
         tv2.setTextColor(Color.parseColor("#FFFFFF"));
         tv2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
+
+
+
         tv2.setFocusableInTouchMode(false);
 
         tv.setOnClickListener(new View.OnClickListener() {
@@ -94,6 +102,15 @@ public class charFragment extends android.support.v4.app.Fragment {
         });
 
         layout.addView(tv2);
+
+    }
+
+    public void addWerewolf(int i){
+        int j = 1;
+        while ( j <= i){
+            addChar("Werewolf " + (j));
+            j++;
+        }
     }
 
     public void pass(int i){
