@@ -38,7 +38,7 @@ public class charFragment extends android.support.v4.app.Fragment {
     LinearLayout layout;
     TextView heading;
     Button start;
-    ArrayList<String> charList = new ArrayList<>(Arrays.asList(new String[] {"Villager","Tanner","Sear","Witch", "Detective", "Vigilante", "Bodyguard", "Hunter"}));
+    ArrayList<String> charList = new ArrayList<>(Arrays.asList(new String[] {"Villager","Tanner","Seer","Witch", "Detective", "Vigilante", "Bodyguard", "Hunter"}));
     ArrayList<String> sendList = new ArrayList<String>();
     HashMap<String, ArrayList<EditText>> textMap = new HashMap<>();
     HashMap<String,ArrayList<String>> charMap = new HashMap<>();
@@ -64,6 +64,11 @@ public class charFragment extends android.support.v4.app.Fragment {
         for (String s:charList){
             addChar(s);
         }
+        TextView tv3 = new TextView(getContext());
+        tv3.setClickable(false);
+        tv3.setFocusable(false);
+        tv3.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 30 + 10 * num);
+        layout.addView(tv3);
 
         start.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -123,7 +128,7 @@ public class charFragment extends android.support.v4.app.Fragment {
         tv2.setTextColor(Color.parseColor("#FFFFFF"));
         tv2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
 
-
+        //tv2.setAlpha(0);
 
         tv2.setFocusableInTouchMode(false);
 
