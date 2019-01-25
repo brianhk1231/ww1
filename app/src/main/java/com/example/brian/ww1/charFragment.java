@@ -102,6 +102,11 @@ public class charFragment extends android.support.v4.app.Fragment {
                                 //Implement with game class
                                 //Start Game
                                 //Add Fragment
+                                nightFragment nf = new nightFragment();
+                                nf.fillChar(charMap);
+
+                                getActivity().getSupportFragmentManager().beginTransaction()
+                                        .replace(R.id.fragment_container, nf).commit();
                             }})
                         .setNegativeButton(android.R.string.no, null).show();
 

@@ -38,6 +38,14 @@ public class Character{
         return role;
     }
 
+    @Override
+    public boolean equals(Object c){
+        if (this.player == ((Character) c).player && this.role == ((Character) c).role){
+            return true;
+        }
+        return false;
+    }
+
 //    @Override
 //    public int compareTo(Character c) {
 //        return (this.ordering - c.ordering);
