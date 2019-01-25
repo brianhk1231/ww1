@@ -80,10 +80,10 @@ public class charFragment extends android.support.v4.app.Fragment {
                         if (playerName.length() > 0) {
                             test += s + ": " + playerName + "\n";
                             if (charMap.containsKey(s)) {
-                                charMap.get(s).add(playerName);
+                                charMap.get(s).add(playerName.trim());
                             } else {
                                 ArrayList<String> playerList = new ArrayList<>();
-                                playerList.add(playerName);
+                                playerList.add(playerName.trim());
                                 charMap.put(s, playerList);
                             }
 

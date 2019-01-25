@@ -1,13 +1,13 @@
-package com.example.brian.ww1;
+package com.example.brian.ww1.chars;
 
 public class Seer  extends Character{
 
-    Seer(String name){
+    public Seer(String name){
         super();
         role = "Seer";
         association = 1;
         player = name;
-        ordering = 3;
+//        ordering = 3;
     }
 
     public void checkAssociation(Character c) {

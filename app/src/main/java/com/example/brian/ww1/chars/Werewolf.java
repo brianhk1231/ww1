@@ -1,13 +1,13 @@
-package com.example.brian.ww1;
+package com.example.brian.ww1.chars;
 
 public class Werewolf extends Character{
 
-    Werewolf(String name){
+    public Werewolf(String name){
         super();
         role = "Werewolf";
         association = 0;
         player = name;
-        ordering = 2;
+//        ordering = 2;
     }
 
 

@@ -1,11 +1,11 @@
-package com.example.brian.ww1;
+package com.example.brian.ww1.chars;
 
-public abstract class Character implements Comparable<Character>{
+public class Character{
     int association;
     int state = 1;
     String role;
     String player;
-    int ordering;
+//    int ordering;
 
     public void setPlayer(String name) {
         player = name;
@@ -38,8 +38,8 @@ public abstract class Character implements Comparable<Character>{
         return role;
     }
 
-    @Override
-    public int compareTo(Character c) {
-        return (this.ordering - c.ordering);
-    }
+//    @Override
+//    public int compareTo(Character c) {
+//        return (this.ordering - c.ordering);
+//    }
 }

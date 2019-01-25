@@ -1,14 +1,14 @@
-package com.example.brian.ww1;
+package com.example.brian.ww1.chars;
 
 public class Witch extends Character{
     int heal = 1;
     int poison = 1;
-    Witch(String name){
+    public Witch(String name){
         super();
         role = "Witch";
         association = 1;
         player = name;
-        ordering = 4;
+//        ordering = 4;
 
     }
 
